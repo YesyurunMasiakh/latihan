@@ -1,6 +1,6 @@
 function profil() {
     const xhttp = new XMLHttpRequest();
-    const url = "https:/pokeapi.co/api/v2/pokemon?lomit=10";
+    const url = "https:/pokeapi.co/api/v2/pokemon?limit=10";
     const httpMethod = "GET";
 
     xhttp.onload = function() {
