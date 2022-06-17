@@ -5,11 +5,11 @@ function profil() {
 
     xhttp.onload = function() {
         const response = JSON.parse(this.responseText);
-        const result = response.result;
+        const results = response.results;
 
         let data = "";
-        for (i = 0; i < result.length; i++) {
-            data = data + `<p> ${result[i].name}</p>`;
+        for (i = 0; i < results.length; i++) {
+            data = data + `<p> ${results[i].name}</p>`;
         }
 
         document.getElementById('tampilkan').innerHTML = data;

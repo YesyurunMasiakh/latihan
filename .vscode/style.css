@@ -31,7 +31,7 @@ body {
     display: grid;
     grid-template-areas: "sidebar" "content" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 800px 250px;
+    grid-template-rows: 10px 800px 250px;
 }
 
 .content,
