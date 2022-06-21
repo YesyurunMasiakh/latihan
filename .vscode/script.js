@@ -1,6 +1,6 @@
 function profil() {
     const xhttp = new XMLHttpRequest();
-    const url = "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-barat";
+    const url = "https://cuaca-gempa-rest-api.vercel.app/weathers";
     const httpMethod = "GET";
 
     xhttp.onload = function() {
