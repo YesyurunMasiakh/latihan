@@ -23,6 +23,10 @@ body {
     background: white;
 }
 
+.quote {
+    text-align: center;
+}
+
 .container {
     font-size: 1.5em;
     width: 100%;

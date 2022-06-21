@@ -1,6 +1,6 @@
 function profil() {
     const xhttp = new XMLHttpRequest();
-    const url = "https:/pokeapi.co/api/v2/pokemon?limit=10";
+    const url = "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-barat";
     const httpMethod = "GET";
 
     xhttp.onload = function() {
@@ -9,13 +9,10 @@ function profil() {
 
         let data = "";
         for (i = 0; i < results.length; i++) {
-            data = data + `<p> ${results[i].name}</p>`;
+            data = data + `<p> ${results[i].city}</p>`;
         }
-
         document.getElementById('tampilkan').innerHTML = data;
     }
     xhttp.open(httpMethod, url);
     xhttp.send();
-
-
 }
